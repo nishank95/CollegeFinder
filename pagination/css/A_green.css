@@ -1,0 +1,28 @@
+	ul.pagination li.details{
+	   color: #397adc;
+	   font-weight: 600;
+	   font-family: Calibri,Sans-serif;
+	}
+    
+    ul.pagination li a
+	{
+		border-radius:3px;	
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		padding:6px 9px 6px 9px;
+	}
+
+	ul.pagination li a
+	{
+        color: #fff;
+        background: #397adc;
+        background:-moz-linear-gradient(top,#87AB19,#699613);
+        background: -webkit-gradient(linear,0 0,0 100%,from(#39a1e8),to(#39a1e8));
+ }	
+	
+	ul.pagination li a:hover,
+	ul.pagination li a.current
+	{
+		color: #397adc;
+		background: #c7daf2;
+	}

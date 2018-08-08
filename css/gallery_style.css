@@ -1,0 +1,120 @@
+
+
+img { border: 0 none; }
+
+li { list-style: none; }
+
+#header {
+  background-color: #f1eeee;
+  padding: 10px 30px;
+}
+
+#header h1 { color: #374035; }
+
+#body { padding: 30px; }
+
+#gallery .images .image, #gallery .images .image a, #gallery .images .image img {
+  height: 150px;
+  width: 150px;
+}
+
+#gallery .images .image {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#gallery .images .image a { display: block; }
+
+#gallery .images .image img { background-color: #775295; }
+
+#gallery .images:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+#slideshow {
+  background-color: rgba(0, 0, 0, 0.75);
+  display: none;
+  height: 100%;
+  position: absolute;
+  top: 750px;
+  width: 100%;
+  z-index: 2;
+}
+
+#slideshow .current .image, #slideshow .controls .previous, #slideshow .controls .next {
+  height: 400px;
+  margin: 78px 0 0;
+}
+
+#slideshow .current .image, #slideshow .current .caption { text-align: center; }
+
+#slideshow .current .caption {
+  color: #f1eeee;
+  padding: 20px 0 0;
+}
+
+#slideshow .controls { position: relative; }
+
+#slideshow .controls .control { position: absolute; }
+
+#slideshow .controls .previous, #slideshow .controls .next {
+  top: 0;
+  width: 50%;
+}
+
+#slideshow .controls .previous { left: 0; }
+
+#slideshow .controls .next { right: 0; }
+
+#slideshow .controls .close {
+  height: 48px;
+  right: 0;
+  top: 0;
+  width: 62px;
+}
+
+#slideshow .controls .control a {
+  color: transparent;
+  display: block;
+}
+
+#slideshow .controls .previous a, #slideshow .controls .next a {
+  height: 500px;
+  width: auto;
+}
+
+#slideshow .controls .previous a {
+  background-image: url(../images/icons/previous.png);
+  background-position: 25% center;
+  background-repeat: no-repeat;
+}
+
+#slideshow .controls .next a {
+  background-image: url(../images/icons/next.png);
+  background-position: 75% center;
+  background-repeat: no-repeat;
+}
+
+#slideshow .controls .close a {
+  background-image: url(../images/icons/close.png);
+  background-position: 50% center;
+  background-repeat: no-repeat;
+  height: 48px;
+  width: 48px;
+}
+
+#footer {
+  background-color: #f1eeee;
+  bottom: 0;
+  height: 34px;
+  position: absolute;
+  width: 100%;
+}
+
+#footer p { padding: 10px 30px; }
+
+#footer p, #footer p a { color: #374035; }
